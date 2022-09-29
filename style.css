@@ -11,6 +11,11 @@ a:link {
 .hero {
     position: relative;
     width: 100%; height: 100vh;
+    background: #1a1a1a;
+}
+.hero-index {
+    position: relative;
+    width: 100%; height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,6 +169,35 @@ nav ul li a:hover {
     left: 50%; transform: translate(-50%, 120px);
     color: rgba(100, 100, 100);
     font-size: 22px; font-weight: bold;
+}
+
+
+.error-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.error-content h2 {
+    color: rgb(170, 170, 170);
+    font-size: 40px;
+}
+
+.error-content h1 {
+    padding-top: 25px;
+    color: rgb(200, 200, 200);
+    font-size: 100px;
+}
+
+.error-content h3 {
+    color: rgb(140, 140, 140);
+}
+
+.error-content p {
+    padding-top: 20px;
+    color: rgb(110, 110, 110);
 }
 
 
