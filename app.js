@@ -41,7 +41,7 @@ if(cookie_consent = ""){
     document.getElementById("cookieNotice").style.display = "block";
 }
 
-
+/*
 const menuBtn = document.querySelector('.menu-btn')
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
@@ -53,3 +53,14 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 })
+*/
+
+var menu = document.getElementById("menu");
+
+function closemenu() {
+    menu.style.top = "-100vh";
+}
+
+function openmenu() {
+    menu.style.top = "0";
+}

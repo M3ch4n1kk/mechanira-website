@@ -4,47 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Mechanira</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Home - Mechanira</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="shortcut icon" href="media/logo.png" type="image/x-icon">
     <script async src="app.js"></script>
 </head>
 <body>
-    <div class="hero">
-        <nav>
-            <div class="navbar">
-                <a href="index.html"><img src="media/logo.png" height="100px"></a>
+    <div id="site-container">
+        <header id="header">
+            <a href="index.html"><img src="media/logo.png" class="header-logo"></a>
+            <nav id="menu">
                 <ul>
-                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
+                <img src="media/close-menu.png" class="close-icon" onclick="closemenu()">
+            </nav>
+            <img src="media/open-menu.png" class="menu-icon" onclick="openmenu()">
+        </header>
+        <div id="content">
+            <div id="page-banner">
+                <p>Hiya!!</p>
             </div>
-        </nav>
 
-        <div id="cookieNotice" class="right display-right" style="display: none;">
-            <div class="title-wrap">
-                <img src="media/cookie.png" width="40px">
-                <h4>Allow Cookies</h4>
+            <div class="content-container">
+                <iframe src="https://www.youtube.com/embed/OHHQ1F5wcRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>BREAKING DEEZ: A critically acclaimed story about betrayal, loss, and insanity, featuring fan-favorite characters from the critically acclaimed hit-drama TV show Breaking Bad.</p>
             </div>
-            <div class="content-wrap">
-                <div class="msg-wrap">
-                    <p>This website uses cookies or similar technologies, to enhance your browsing experience and provide personalized recommendations. By continuing to use my website, you agree to its <a style="color:#115cfa;" href="/privacy-policy">Privacy Policy</a></p>
-                    <div class="btn-wrap">
-                        <button class="btn-primary" onclick="acceptCookieConsent();">Understood. Yum!</button>
+            <div class="content-container">
+                <img src="media/home1.jpg" alt="">
+                <p>Coding is fun. I love code!</p>
+            </div>
+            <div class="content-container">
+                <img src="media/home2.jpg" alt="">
+                <p>Code doesn't work wtf</p>
+            </div>
+            <div class="content-container">
+                <img src="media/home3.jpg" alt="">
+                <p>I'm at my limit.</p>
+            </div>
+
+            <div id="cookieNotice" style="display: none;">
+                <div class="title-wrap">
+                    <img src="media/cookie.png" width="40px">
+                    <h4>Allow Cookies</h4>
+                </div>
+                <div class="content-wrap">
+                    <div class="msg-wrap">
+                        <p>This website uses cookies or similar technologies, to enhance your browsing experience and provide personalized recommendations. By continuing to use my website, you agree to its <a style="color:#115cfa;" href="/privacy-policy">Privacy Policy</a></p>
+                        <div class="btn-wrap">
+                            <button class="btn-primary" onclick="acceptCookieConsent();">Understood. Yum!</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer">
-        <ul>
-            <li><a href="https://www.youtube.com/channel/UC91__VULNxILm8outao64tA" target="_blank"><img src="media/svg-youtube.svg" width="40px"></a></li>
-            <li><a href="https://github.com/M3ch4n1kk" target="_blank"><img src="media/svg-github.svg" width="40px"></a></li>
-            <li><a href="discord://discordapp.com/users/425661467904180224" target="_blank"><img src="media/svg-discord.svg" width="40px"></a></li> <!-- href redirects to desktop app -->
-            <li><a href="https://twitter.com/m3ch4n1kk" target="_blank"><img src="media/svg-twitter.svg" width="40px"></a></li>
-        </ul>
-        <a href="404.html" class="footer-text">404 Page</a>
+        <div id="footer">
+            <div class="inner-footer">
+                <div class="footer-container">
+                    <h1>Need help?</h1>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-container">
+                    <h1>More</h1>
+                    <a href="#">Donate</a>
+                    <a href="404.html">404 Page</a>
+                </div>
+                <div class="footer-container">
+                    <h1>Follow Me</h1>
+                    <li><a href="#" target="_blank"><img src="media/svg-discord.svg"></a></li>
+                    <li><a href="https://www.github.com/M3ch4n1kk" target="_blank"><img src="media/svg-github.svg"></a></li>
+                    <li><a href="https://www.twitter.com/m3ch4n1kk" target="_blank"><img src="media/svg-twitter.svg"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC91__VULNxILm8outao64tA" target="_blank"><img src="media/svg-youtube.svg"></a></li>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

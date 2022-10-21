@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+.site-content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    padding: 150px 100px;
+    text-align: center;
+    background: url("/media/404-moai.gif");
+    background-repeat: none;
+    background-size: cover;
+}
+
+.content h1 {
+    font-size: 3rem;
+    padding: 10px 0;
+}
+
+.content img {
+    padding: 20px 0;
+}
